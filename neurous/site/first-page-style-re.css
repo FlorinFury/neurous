@@ -1,0 +1,136 @@
+
+body {
+    background: linear-gradient(7deg, #febdab 0%, #f8b9a9 25%, #a56274 60%, #4d5b77 80%, #3c4459 100%);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Microsoft YaHei UI Light", serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Microsoft YaHei UI Light", serif;
+    font-size: 50px;
+    line-height: 46px;
+    margin-bottom: 22px;
+    color: #FCFFF7;
+    text-shadow: 1px 1px 1px #381A4B,
+    -1px 1px 1px #381A4B;
+}
+
+h2 {
+    font-family: "Microsoft YaHei UI Light", serif;
+    color: #FCFFF7;
+    text-shadow: 1px 1px 1px silver,
+    -1px 1px 1px silver;
+}
+
+.above-header {
+    height: 50px;
+    background: #FCFFF7;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1200px;
+    min-width: 800px;
+    height: 50px;
+    background: #FCFFF7;
+    margin: 0 auto;
+}
+
+.header-section-left {
+    width: 400px;
+    float: left;
+}
+
+.header-section-right {
+    width: 400px;
+    float: right;
+}
+
+.header-section-right-p {
+    margin: 14.5px 30px;
+    height: 50px;
+}
+
+.main-block {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.main-block-title {
+    margin: 60px 0;
+}
+
+.main-block-description {
+    max-width: 1160px;
+    min-width: 760px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: url(../design/description-smoth.jpg);
+    border-radius: 45px;
+
+}
+
+.main-block-description-text {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 45px;
+}
+
+.last-block {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto 0;
+}
+
+.last-block-content {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 5px auto;
+    display: flex;
+}
+
+.sign-up-log-in {
+    width: 47.5%;
+    height: auto;
+    margin: auto;
+    padding: 0 5px 0 auto;
+    float: left;
+    text-align: center;
+    align-self: center;
+}
+
+
+.last-block-pic {
+    width: 47.5%;
+    height: auto;
+    margin: auto;
+    padding: 10px auto 10px 5px;
+    float: right;
+    text-align: center;
+    align-self: center;
+}
+
+.last-block-q {
+    width: 60%;
+    height: 50px;
+    background-color: #381A4B;
+    margin: 20px auto;
+    padding: 0px 0px;
+    border-radius: 45px;
+    text-align: center;
+}
+
+
+
+.page-footer {
+    height: 50px;
+    background: #FCFFF7;
+    margin: 25px auto 0;
+}
+

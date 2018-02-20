@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="first-lesson-practice.css">
+	<script src="fck.js"></script>
+	<link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+	<title>Первая практика</title>
+</head>
+<body>
+
+	<div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color:#381A4B">Добро пожаловать на <a href="first-page-re.html" style="text-decoration: none"><strong>NEUROUS</strong></a>!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-block">
+
+        <div class="main-block-title">
+            <h1 align="center">Первый урок</h1>
+            <p align="center">Практика.</p>
+        </div>
+
+
+        <!-- test -->
+
+        <table style="max-width: 1200px; min-width: 800px; margin: 0 auto">
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">1. Основным элементом биологической и искусственной нейронной сети является?</p>
+
+			    	<ul>
+			    	<input class="answer" type="radio" name="q1" value="1">
+			        <label id="correctString1">Нейрон</label>
+			    	<br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Нервная клетка</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Аксон</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Логический элемент</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">2. Какой элемент обеспечивает связь между нейронами в биологической нейронной сети?</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Аксон</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Дендрит</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="1">
+			        <label id="correctString2">Синапс</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Электрический или химический импульс</label>
+			    	</ul>
+			  	</div>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">3. Что выполняет роль импульсов в искусственной нейронной сети?</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Числа</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Электрические сигналы</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Данные</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="1">
+			        <label id="correctString3">Данные в численном виде</label>
+			    	</ul>
+				</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">4. Обучение в искусственной сети проходит через:</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Повторную активацию связей</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Обработку данных в соответствии с примером</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Распознавание общей структуры данных</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="1">
+			        <label id="correctString4">Все варианты верны</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			</tr>
+			</table>
+		<br/>
+		  <div class="submitter">
+		          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+		          type="submit" value="проверить" />
+		    </div>
+		  
+		<!--show only wrong answers on submit-->
+		    <div class="quizAnswers" id="correctAnswer1"></div>
+			<div class="quizAnswers" id="correctAnswer2"></div>
+		    <div class="quizAnswers" id="correctAnswer3"></div>
+		    <div class="quizAnswers" id="correctAnswer4"></div>
+
+		<!--show score upon submit-->
+		    <div>
+		    	<h2 class="quizScore" id="userScore"></h2>
+		    </div>
+
+        <!-- test -->
+    	
+    </div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <p></p>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="first-lesson.html" class="page-footer-buttons">Вернуться к лекции</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="second-lesson.html" class="page-footer-buttons">Следующий урок</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

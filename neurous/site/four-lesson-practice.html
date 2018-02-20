@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="four-lesson-practice.css">
+	<link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+	<title>PRACTICE</title>
+</head>
+<body>
+
+	<div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color:#381A4B;">Добро пожаловать на <strong>NEUROUS!</strong></p>
+                </div>
+            </section>
+        </div>
+    </div>
+		
+	<div class="main-block">
+        <div class="main-block-title">
+            <h1 align="center">Четвертый урок</h1>
+            <p align="center">Практическое задание по созданию нейронной сети.</p>
+		</div>
+		
+		<div class="main-block-content">
+
+            <p style="text-align: center;"><strong>А теперь попробуйте своими руками создать нейронную сеть.</strong><p>
+            <p>Теперь некоторые команды придется писать самостоятельно</p>
+            <p>
+                Для начала посмотрите список необходимых переменных и их задач.<br>
+                X — матрица входного набор данных; строки – тренировочные примеры   <br>
+                y – матрица выходного набора данных; строки – тренировочные примеры <br>
+                l0 – первый слой сети, определённый входными данными<br>
+                l1 – второй слой сети, или скрытый слой<br>
+                l2 – финальный слой, это наша гипотеза. По мере тренировки должен приближаться к правильному ответу<br>
+                syn0 – первый слой весов, Synapse 0, оъединяет l0 с l1. <br>
+                syn1 – второй слой весов, Synapse 1, объединяет l1 с l2.<br>
+                l2_error – промах сети в количественном выражении<br>
+                l2_delta – ошибка сети, в зависимости от уверенности предсказания. Почти совпадает с ошибкой, за исключением уверенных предсказаний<br>
+                l1_error – взвешивая l2_delta весами из syn1, мы подсчитываем ошибку в среднем/скрытом слое<br>
+                l1_delta – ошибки сети из l1, масштабируемые по увеернности предсказаний. Почти совпадает с l1_error, за исключением уверенных предсказаний.<br>
+            </p>
+            <p>Итак, начнем. Вам необходимо запомнить пропуски. Вместо символов #??? написать свой код</p>
+
+            <div class="main-block-content-text">
+				<div class="main-block-content1-pic">
+					<p><img src="../design/one.png" style="width: 60px;"></p>
+				</div>
+				<div class="main-block-content1-p">
+					<p style="padding-left: 15px">
+                        import #??? <br>
+					    #попробуйте вспомнить, как называется библиотека линейной алгебры
+					</p>
+				</div>
+			</div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/two.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # пишем функцию активации<br>
+                        def nonlin(#???<br>
+                        ): #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/three.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # создаем переменную для набора входных данных <br>
+                        X = #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/four.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # выходные данные <br>
+                        y = #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/five.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # сделаем случайные числа более определёнными <br>
+                         np.random.seed(1)
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/six.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # случайно инициализируем веса, в среднем - 0 <br>
+                        syn0 = #???<br>
+                        syn1 = #???<br>
+
+                        for j in range(60000):
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/seven.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # проходим вперёд по слоям 0, 1 и 2 (прямое распространение)<br>
+                        l0 = #???<br>
+                        l1 = #???<br>
+                        l2 = #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/eight.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                       # выполняем проверку ошибок<br>
+                        l2_error = #???<br>
+                        if (j% 10000) == 0:<br>
+                        print "Error:" + str(np.mean(np.abs(l2_error)))
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/nine.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # в какую сторону нужно двигаться?<br>
+                        # если мы были уверены в предсказании, то сильно менять его не надо<br>
+                        l2_delta = #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/10.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # как сильно значения l1 влияют на ошибки в l2?<br>
+                        l1_error = l2_delta.dot(syn1.T)
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/11.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        # в каком направлении нужно двигаться, чтобы прийти к l1?<br>
+                        # если мы были уверены в предсказании, то сильно менять его не надо<br>
+                        l1_delta = #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/12.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        #обновим веса <br>
+                        syn1 += #???<br>
+                        syn0 += #???
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/13.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        #выведем результат:<br>
+                        print()
+                    </p>
+                </div>
+            </div>
+
+            <p style="text-align: center;"><strong>Поздравляем, вы самостоятельно сделали нейросеть!</strong></p>
+        </div>
+
+        <div class="main-block-content-idle">
+            <div class="my-lovely-idle">
+                <iframe frameborder="0" width="100%" height="500px" src="https://repl.it/languages/python3?lite=true"></iframe>
+            </div>
+
+	    </div>
+
+	</div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <a href="third-lesson.html" class="page-footer-buttons">Предыдущий урок</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="four-lesson.html" class="page-footer-buttons">вернуться к лекции</a>
+            </div>
+            <div class="page-footer-spaces">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

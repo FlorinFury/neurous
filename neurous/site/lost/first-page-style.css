@@ -1,0 +1,54 @@
+/*
+body{
+    background-image: url(../design/site-back-smoth2.jpg);
+    background-color: #ded5e8;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
+
+.header {
+    background-color: white;
+}
+
+.block-h1 {
+    margin: 8px;
+    padding: 16px;
+}
+
+h1 {
+    font-family: "Microsoft YaHei UI Light";
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 22px;
+    color: #381A4B;
+    text-shadow: 1px 1px 1px silver,
+    -1px 1px 1px silver;
+}
+
+.block1 {
+    width: 55%;
+    background: LightSteelBlue;
+    margin-left: 2.5%;
+    margin-right: auto;
+    padding: 5px 20px 5px 5px;
+    border: solid 1px black;
+    float: left;
+}
+
+.block2 {
+    width: ;
+    margin-right: 2.5%;
+    float: right;
+}
+
+.sign-up {
+    background: white;
+    float: left;
+}
+
+.log-in {
+    background: #60198a;
+    float: right;
+}

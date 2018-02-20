@@ -1,0 +1,29 @@
+body { 
+background-color: #ded5e8; 
+}
+.block1{
+width: 25%;
+background: #ded5e8;
+padding: 5px 5px 5px 5px;
+float: right;
+border: solid 1px black; 
+}
+.class-lessons{
+	text-align: center;
+	font-family: Century Gothic;
+}
+.style-button1{
+	text-align: center;
+	border: solid 1px black;
+	float: left;	
+}
+.style-button2{
+	text-align:center;
+	border: solid 1px black; 
+	float: center;
+}
+.style-button3{
+	text-align: center;
+	border: solid 1px black;
+	float: right;
+}

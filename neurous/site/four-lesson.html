@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="four-lesson.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+    <title>Четвертый урок</title>
+
+    <link href="prism.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <script src="prism.js"></script>
+
+    <div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color:#381A4B">Добро пожаловать на <a href="first-page-re.html" style="text-decoration: none"><strong>NEUROUS</strong></a>!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="main-block-title">
+            <h1 align="center">Четвертый урок</h1>
+            <p align="center">Практическое задание по созданию нейронной сети.</p>
+		</div>
+		
+		<div class="main-block-content">
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/one.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px; background: #FCFFF7;">
+                        <code style="font-size: 16px;" class="python">
+                        #импортируем библиотеку линейной алгебры<br>
+                        import numpy as np
+                        </code>
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/two.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        #пишем функцию активации (сигмиоду)<br>
+                        def nonlin(x,deriv=False):<br>
+                            if(deriv==True):<br>
+                                return f(x)*(1-f(x))<br>
+                            return 1/(1+np.exp(-x))<br>
+                        </code>
+                    </p>
+                    <p>
+                        ''' Эта функция создаёт «сигмоиду». Она ставит в соответствие любое число значению от 0 до 1 и преобразовывает числа в вероятности. Эта функция также умеет выдавать производную сигмоиды (deriv=True). Это одно из её полезных свойств. Если выход функции – это переменная out, тогда производная будет out * (1-out).'''
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/three.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        # создаем переменную для набора входных данных<br>
+                        X = np.array([  [0,0,1],<br>
+                                        [0,1,1],<br>
+                                        [1,0,1],<br>
+                                        [1,1,1] ])<br>
+                        </code>
+                    </p>
+                    <p>
+                        ''' Инициализация массива входных данных в виде numpy-матрицы. Каждая строка – тренировочный пример. Столбцы – это входные узлы. У нас получается 3 входных узла в сети и 4 тренировочных примера. '''
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/four.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        # инициализируем веса случайным образом со средним 0<br>
+                        syn0 = 2*np.random.random((3,1)) - 1<br>
+
+                        for iter in range(10000):<br>
+                        </code>
+                    </p>
+                    <p>
+                        syn0 = матрица весов сети. Она связывает слои входа и выхода между собой. Её размерность (3, 1), поскольку у нас есть 3 входа и 1 выход. Всё обучение хранится в syn0. Слой входных данных так же имеет размер 3, а l1 – 1. Поскольку мы связываем все узлы в l0 со всеми узлами l1, нам требуется матрица размерности (3, 1). И мы используем для этого syn0
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/five.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        # прямое распространение<br>
+                            l0 = X<br>
+                            l1 = nonlin(np.dot(l0,syn0))<br>
+                        </code>
+                    </p>
+                    <p>
+                        l0 – первый слой сети, определённый входными данными В X содержится 4 тренировочных примера. Мы обработаем их все и сразу. Итого мы имеем 4 разных строки l0, но их можно представить себе как один тренировочный пример<br>
+                        l1 – второй слой сети, или скрытый слой Это шаг предсказания. Мы позволяем сети попробовать предсказать вывод на основе ввода. Затем мы посмотрим, как это у неё получается, чтобы можно было ее исправить. В строке содержится два шага. Первый делает матричное перемножение l0 и syn0. Второй передаёт вывод через сигмоиду. Размерности у них следующие:(4 x 3) dot (3 x 1) = (4 x 1) Матричные умножения требуют, чтобы в середине уравнения размерности совпадали. Итоговая матрица имеет количество строк, как у первой, а столбцов – как у второй. Мы загрузили 4 тренировочных примера, и получили 4 догадки (матрица 4х1). Каждый вывод соответствует догадке сети для данного ввода.
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/six.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        # проверка ошибок<br>
+                        l1_error = y - l1<br>
+                        </code>
+                    </p>
+                    <p>
+                        Поскольку в l1 содержатся догадки, мы можем сравнить их разницу с реальностью, вычитая её l1 из правильного ответа y. l1_error – вектор из положительных и отрицательных чисел, характеризующий «промах» сети.
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/seven.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        <code style="font-size: 16px">
+                        # перемножим это с наклоном сигмоиды <br>
+                        # на основе значений в l1<br>
+                        l1_delta = l1_error * nonlin(l1,True)
+                        </code>
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/eight.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        Полное выражение - это производная, взвешенная по ошибкам.
+                        l1_error – это матрица (4,1). nonlin(l1,True) возвращает матрицу (4,1).
+                        Здесь мы поэлементно их перемножаем, и на выходе тоже получаем матрицу (4,1), l1_delta.
+                        Умножая производные на ошибки, мы уменьшаем ошибки предсказаний, сделанных с высокой уверенностью.
+                        Если догадка в сети близка к нулю (х=0, у=0,5), то она не особенно уверенная.
+                        Мы обновляем эти неуверенные предсказания и оставляем в покое предсказания с высокой уверенностью,
+                        умножая их на величины, близкие к нулю.
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/nine.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                         # обновим веса<br>
+                        syn0 += np.dot(l0.T,l1_delta)
+                    </p>
+                </div>
+            </div>
+		
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/10.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px;  background: #FCFFF7;">
+                        #Выведем результат<br>
+                        print (l0)<br>
+                    </p>
+                    <p>
+                        Выходные данные после тренировки:<br>
+                        [[ 0.00966449]<br>
+                         [ 0.00786506]<br>
+                         [ 0.99358898]<br>
+                         [ 0.99211957]]
+                    </p>
+                </div>
+            </div>
+		
+		</div>
+    </div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <a href="third-lesson.html" class="page-footer-buttons">Предыдущий урок</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="four-lesson-practice.html" class="page-footer-buttons">Практика</a>
+            </div>
+            <div class="page-footer-spaces">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+		

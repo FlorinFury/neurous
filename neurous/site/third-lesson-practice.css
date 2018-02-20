@@ -1,0 +1,242 @@
+body {
+    background: #EAE3F2;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: "Microsoft YaHei UI Light", serif;
+}
+
+h1 {
+    font-family: "Microsoft YaHei UI Light", serif;
+    font-size: 50px;
+    line-height: 46px;
+    margin-bottom: 22px;
+    color: #381A4B;
+    text-shadow: 1px 1px 1px silver,
+    -1px 1px 1px silver;
+}
+
+h2 {
+    font-family: "Microsoft YaHei UI Light", serif;
+    color: #381A4B;
+}
+
+.above-header {
+    height: 50px;
+    background: #FCFFF7;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 1200px;
+    min-width: 800px;
+    height: 50px;
+    background: #FCFFF7;
+    margin: 0 auto;
+}
+
+.header-section-left {
+    width: 400px;
+    float: left;
+}
+
+.header-section-right {
+    width: 400px;
+    float: right;
+}
+
+.header-section-right-p {
+    margin-right: 30px;
+}
+
+.main-block {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 50px auto 50px;
+    height: auto;
+}
+
+.main-block-title {
+    margin: 10px 0;
+    height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+p.question {
+  font-family: Arial, sans-serif;
+      font-size:20px;
+  color: #381A4B;
+  margin-bottom:0px;
+}
+
+h2.quizHeader {
+  font-family: Arial, sans-serif;
+  font-weight:normal;
+  font-size:25px;
+  line-height: 27px;
+  margin: 24px 0 12px 0;
+  padding: 0 0 4px 0;
+  border-bottom: 1px solid #a2a2a2;
+}
+
+h2.quizScore{
+  font-family: Arial, sans-serif;
+  font-size:25px;
+}
+
+div.quizAnswers{
+  font-family: Arial, sans-serif;
+  font-size:16px;
+  color: #381A4B;
+  padding: 4px 0 4px 0;
+}
+
+label {
+  font-family: Arial, sans-serif;
+  font-size:14px;
+  color: #381A4B;
+  vertical-align:top;
+}
+
+input.answer[type="radio"] {
+  margin-bottom: 10px;
+}
+
+input.quizSubmit[type="submit"] {
+  -webkit-background-clip: border-box;
+  -webkit-background-origin: padding-box;
+  -webkit-background-size: auto;
+  -webkit-transition-delay: 0s, 0s;
+  -webkit-transition-duration: 0.2s, 0.2s;
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-timing-function: ease, ease;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
+  color: #FFFFFF;
+  background-color: #381A4B;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  text-transform:uppercase;
+  height:35px;
+  width: 100px;
+  border: 1px solid #381A4B;
+  border-radius:5px;
+  
+ }
+
+input.quizSubmit[type="submit"]:hover {
+  color: #C380D1;
+  background: #381A4B;
+  text-decoration: none;
+}
+
+table {
+  background-color: white;
+      border:1px solid #381A4B;
+  border-radius: 45px;
+  padding:10px;
+  padding-left:25px;
+  box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
+  margin: auto;
+}
+
+th {
+  
+}
+
+tr {
+  
+}
+
+td {
+
+}
+
+.submitter {
+      width: 85px;
+      margin: auto
+}
+
+.hide {
+      display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-footer-above {
+    height: 50px;
+    background: #FCFFF7;
+    margin: 25px auto 0;
+}
+
+.page-footer {
+    height: 50px;
+    background: #FCFFF7;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+/*
+.page-footer-left {
+    height: 50px;
+    max-width: 600px;
+    min-width: 400px;
+    float: left;
+    text-align: center;
+}
+
+.page-footer-right {
+    height: 50px;
+    max-width: 600px;
+    min-width: 400px;
+    float: right;
+    text-align: center;
+}
+
+*/
+
+.page-footer-buttons {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin: 8.5px auto;
+    padding: 6px 15px;
+    color: #EAE3F2;
+    border: 1px solid rgba(255,255,255,.4);
+    background: #400944;
+    font-family: 'Microsoft YaHei UI Light', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 45px;
+
+}
+
+.page-footer-spaces {
+    width: 28%;
+    float: left;
+    text-align: center;
+    margin: 0 1.6%;
+    padding: 0 1%;
+    height: auto;
+}

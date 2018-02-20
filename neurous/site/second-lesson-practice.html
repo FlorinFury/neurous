@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="second-lesson-practice.css">
+	<script src="fck.js"></script>
+	<link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+	<title>Первая практика</title>
+</head>
+<body>
+
+	<div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color: #381A4B">Добро пожаловать на <a href="first-page-re.html" style="text-decoration: none"><strong>NEUROUS</strong></a>!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-block">
+
+        <div class="main-block-title">
+            <h1 align="center">Второй урок</h1>
+            <p align="center">Практика.</p>
+        </div>
+
+        <!-- test -->
+
+        <table style="max-width: 1100px; min-width: 800px; margin: 0 auto">
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">1. Соберите искусственный нейрон в правильном порядке.</p>
+
+			    	<ul>
+			    	<input class="answer" type="radio" name="q1" value="0">
+			        <label>Вход, сумматор, функция активации, веса, выход</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="1">
+			        <label id="correctString1">Вход, веса, сумматор, функция активации, выход</label>
+			    	<br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Веса, вход, сумматор, функция активации, выход</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Веса, вход, функция активации, сумматор, выход</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">2. Выберите верное утверждение:</p>
+			    	<ul>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Гиперболический тангенс и логистическая функция – виды функции единичного скачка</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Выходной сигнал логистической функции может быть равен только 1 или 0</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="1">
+			        <label id="correctString2">Гиперболический тангенс может получать на выходе отрицательные значения</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Параметр а – порог, который определяет выходное значение функции единичного скачка</label>
+			    	</ul>
+			  	</div>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">3. Выберите правильное утверждение:</p>
+
+			    	<ul>
+			    	<input class="answer" type="radio" name="q3" value="1">
+			        <label id="correctString3">Для каждого входа есть свой вес</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Данные со входа суммируются с числом, которое содержится в весах</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Данные с весов отправляются на масштабирование в сумматор</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Веса обрабатывают входящий сигнал с других нейронов</label>			        
+			    	</ul>
+				</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">4. Выберите верное утверждение:</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Взвешенная сумма – результат работы функции активации</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Функция активации одна для всех нейронных сетей</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Выход нейрона и функция активации – одно и то же</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="1">
+			        <label id="correctString4">Функция активации преобразует взвешенную сумму</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			</tr>
+			</table>
+		<br/>
+		  <div class="submitter">
+		          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+		          type="submit" value="проверить" />
+		    </div>
+		  
+		<!--show only wrong answers on submit-->
+		    <div class="quizAnswers" id="correctAnswer1"></div>
+			<div class="quizAnswers" id="correctAnswer2"></div>
+		    <div class="quizAnswers" id="correctAnswer3"></div>
+		    <div class="quizAnswers" id="correctAnswer4"></div>
+
+		<!--show score upon submit-->
+		    <div>
+		    	<h2 class="quizScore" id="userScore"></h2>
+		    </div>
+
+        <!-- test -->
+
+    	
+    </div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <a href="first-lesson.html" class="page-footer-buttons" >Предыдущий урок</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="second-lesson.html" class="page-footer-buttons" >Вернуться к лекции</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="third-lesson.html" class="page-footer-buttons">Следующий урок</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

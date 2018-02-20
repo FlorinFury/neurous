@@ -1,0 +1,80 @@
+body {
+  background: #EAE3F2;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Microsoft YaHei UI Light", serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Microsoft YaHei UI Light", serif;
+  font-size: 50px;
+  line-height: 46px;
+  margin-bottom: 22px;
+  color: #381A4B;
+  text-shadow: 1px 1px 1px silver,
+  -1px 1px 1px silver;
+}
+
+h2 {
+  font-family: "Microsoft YaHei UI Light", serif;
+  color: #381A4B;
+}
+
+.above-header {
+  height: 50px;
+  background: #FCFFF7;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1200px;
+  min-width: 800px;
+  height: 50px;
+  background: #FCFFF7;
+  margin: 0 auto;
+}
+
+.header-section-left {
+  width: 400px;
+  float: left;
+}
+
+.header-section-right {
+  width: 400px;
+  float: right;
+}
+
+.header-section-left-pic {
+  color: white;
+  width: auto;
+  height: 46px;
+  text-decoration: none;
+}
+
+.header-section-right-p {
+  margin-right: 30px;
+}
+
+.main-block {
+  max-width: 1200px;
+  min-width: 800px;
+  height: auto;
+  margin: 25px auto;
+}
+
+.my-lovely-idle {
+  max-width: 1200px;
+  min-width: 800px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.page-footer {
+  height: 50px;
+  background: #FCFFF7;
+  margin: 25px auto 0;
+}

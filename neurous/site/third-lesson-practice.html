@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="third-lesson-practice.css">
+	<script src="fck.js"></script>
+	<link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+	<title>Первая практика</title>
+</head>
+<body>
+
+	<div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color:#381A4B">Добро пожаловать на <a href="first-page-re.html" style="text-decoration: none"><strong>NEUROUS</strong></a>!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-block">
+
+        <div class="main-block-title">
+            <h1 align="center">Третий урок</h1>
+            <p align="center">Практика.</p>
+        </div>
+
+        <!-- test -->
+
+        <table style="max-width: 1200px; min-width: 800px; margin: 0 auto">
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">1. Выберите верные утверждения:</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Каждая нейронная сеть имеет несколько слоев</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="1">
+			        <label id="correctString1">Входной слой есть у всех нейронных сетей</label>
+			    	<br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Слой – это совокупность составляющих нейрона</label>
+			        <br>
+			        <input class="answer" type="radio" name="q1" value="0">
+			        <label>Сети с меньшим количеством слоев решают более сложные задачи</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">2. Выберите верные утверждения:</p>
+			    	<ul>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>В однослойных сетях данные сразу подаются на скрытый слой</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Входных слоев может быть несколько</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="0">
+			        <label>Скрытые слои есть только у однослойных сетей</label>
+			        <br>
+			        <input class="answer" type="radio" name="q2" value="1">
+			        <label id="correctString2">В однослойных сетях данные от входного слоя сразу идут на выходной</label>
+			    	</ul>
+			  	</div>
+			  </td>
+			</tr>
+			<tr>
+			  <td>
+			  	<div>
+			  		<p class="question">3. Скрытые слои в многослойных сетях:</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Не существуют</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Преобразуют входные сигналы в выходные</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="1">
+			        <label id="correctString3">Преобразуют входные сигналы в промежуточный результат</label>
+			        <br>
+			        <input class="answer" type="radio" name="q3" value="0">
+			        <label>Скрытые слои не справляются со сложными задачами</label>
+			    	</ul>
+				</div>
+			  </td>
+			  <td>
+			  	<div>
+			  		<p class="question">4. Выберите ошибочное утверждение:</p>
+
+			    	<ul>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>В сетях прямого распространения сигнал идет в одном направлении</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>Сети с обратными связями обладают свойствами кратковременной памяти</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="0">
+			        <label>В сетях с обратными связями сигнал может распространяться от выхода к входу</label>
+			        <br>
+			        <input class="answer" type="radio" name="q4" value="1">
+			        <label id="correctString4">Сигнал не циркулирует в сетях с обратными связями</label>
+		    		</ul>
+			  	</div>
+			  </td>
+			</tr>
+			</table>
+		<br/>
+		  <div class="submitter">
+		          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+		          type="submit" value="проверить" />
+		    </div>
+		  
+		<!--show only wrong answers on submit-->
+		    <div class="quizAnswers" id="correctAnswer1"></div>
+			<div class="quizAnswers" id="correctAnswer2"></div>
+		    <div class="quizAnswers" id="correctAnswer3"></div>
+		    <div class="quizAnswers" id="correctAnswer4"></div>
+
+		<!--show score upon submit-->
+		    <div>
+		    	<h2 class="quizScore" id="userScore"></h2>
+		    </div>
+
+        <!-- test -->
+    	
+    </div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <a href="second-lesson.html" class="page-footer-buttons" >Предыдущий урок</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="third-lesson.html" class="page-footer-buttons">Вернуться к лекции</a>
+            </div>
+			<div class="page-footer-spaces">
+                <a href="four-lesson.html" class="page-footer-buttons">Следующий урок</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

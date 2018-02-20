@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="third-lesson-style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../design/logo-brain1.png" type="image/png">
+    <title>Третий урок</title>
+</head>
+<body>
+
+    <div class="above-header">
+        <div class="header">
+            <section class="header-section-left">
+                <a href="first-page-re.html">
+                    <img src="../design/logo-brain.png" hspace="30px" height="46px" alt="NEUROUS">
+                </a>
+            </section>
+            <section class="header-section-right">
+                <div class="header-section-right-p">
+                    <p align="right" style="color:#381A4B">Добро пожаловать на <a href="first-page-re.html" style="text-decoration: none"><strong>NEUROUS</strong></a>!</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="main-block-title">
+            <h1 align="center">Третий урок</h1>
+            <p align="center">Целостная структура нейронных сетей.</p>
+        </div>
+
+        <div class="main-block-definition">
+            <p>
+                Нейроны в искусственной нейронной сети связаны друг с другом так же, как и нейроны в биологической сети. Совокупности нейронов в искусственной сети называются слоями. Количество слоев зависит от задач, которые выполняет нейронная сеть. Тем не менее каждая нейронная сеть должна иметь хотя бы один слой, который называется входным. Чаще всего входной слой просто распределяет входные сигналы для следующих нейронов.
+            </p>
+        </div>
+
+        <div class="main-block-content">
+            
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/one.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        <i>Однослойная нейронная сеть</i> — сеть, в которой сигналы от входного слоя сразу подаются на выходной слой, который и преобразует сигнал и сразу же выдает ответ.
+                    </p>
+                    <div class="main-block-content1-p">
+                        <div id="main-block-content-pic">
+                            <img src="../design/3-1.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/two.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        <i>Многослойная нейронная сеть</i> — нейронная сеть, состоящая из входного, выходного и расположенных между ними одного или нескольких скрытых слоев нейронов.<br>
+                        Скрытые слои нейронной сети преобразуют входные сигналы в некоторые промежуточные результаты. Благодаря скрытым слоям нейронные сети могут выполнять сложные задачи, обрабатывая данные по этапам
+
+                    </p>
+                    <div class="main-block-content1-p">
+                        <div id="main-block-content-pic">
+                            <img src="../design/3-2.png" style="width: 500px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/three.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        <i>Сети прямого распространения</i> — искусственные нейронные сети, в которых сигнал распространяется строго от входного слоя к выходному. В обратном направлении сигнал не распространяется. Это можно посмотреть на картинках выше. Стрелки идут слева направо, сигнал не возвращается.
+                    </p>
+                </div>
+            </div>
+
+            <div class="main-block-content-text">
+                <div class="main-block-content1-pic">
+                    <p><img src="../design/four.png" style="width: 60px;"></p>
+                </div>
+                <div class="main-block-content1-p">
+                    <p style="padding-left: 15px">
+                        <i>Сети с обратными связями</i> — искусственные нейронные сети, в которых выход нейрона может вновь подаваться на его вход. В более общем случае это означает возможность распространения сигнала от выходов к входам.
+                        <br>В таких сетях результат выхода нейрона определяется не только его весами и входным сигналом, но еще и предыдущими выходами, так как они снова вернулись на входы. Возможность сигналов циркулировать в сети открывает новые, возможности нейронных сетей. С помощью таких сетей можно создавать нейросети, восстанавливающие или дополняющие сигналы. Эти нейросети имеют свойства, похожие на кратковременную память человека.
+                        <br>Так выглядит сеть с обратными связями:
+                    </p>
+                    <div class="main-block-content1-p">
+                        <div id="main-block-content-pic">
+                            <img src="../design/3-3.png" style="width: 90%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>По итогу этого урока мы рассмотрели нейронные сети с точки зрения целостной структуры. Как и в любой структуре, в нейронной сети есть составляющие – слои. От их количества зависит сложность сети и ее способность справляться с нестандартными задачами, которые ставит перед ней глубинное обучение. Кроме того, важным фактом является существование сетей с обратными связями, в которых данные идут в разных направлениях. Такие нейронные сети открывают еще большие возможности для исследований, благодаря своей способности к «запоминанию».</p>
+
+        </div>
+
+    </div>
+
+    <div class="page-footer-above">
+        <div class="page-footer">
+            <div class="page-footer-spaces">
+                <a href="second-lesson.html" class="page-footer-buttons" >Предыдущий урок</a>
+            </div>
+            <div class="page-footer-spaces">
+                <a href="third-lesson-practice.html" class="page-footer-buttons" >Практика</a>
+            </div>
+			<div class="page-footer-spaces">
+                <a href="four-lesson.html" class="page-footer-buttons">Следующий урок</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
